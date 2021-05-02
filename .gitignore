@@ -1,0 +1,12 @@
+.babelrc
+build/
+assets/bundles/
+node_modules/
+tests/
+.eslintcache
+*swp
+package-lock.json
+devel/
+nvm/
+.env.production
+.env.dev
