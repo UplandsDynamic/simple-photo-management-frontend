@@ -2,7 +2,7 @@
   "author": "Dan Bright, productions@aninstance.com",
   "license": "GPLv3",
   "name": "simple-photo-management-react-frontend",
-  "version": "1.0.8-beta",
+  "version": "1.0.9-beta",
   "private": true,
   "description": "React frontend for Django REST Simple Photo Management application",
   "main": "index.js",
@@ -12,6 +12,7 @@
     "@fortawesome/free-regular-svg-icons": "*",
     "@fortawesome/free-solid-svg-icons": "*",
     "@fortawesome/react-fontawesome": "*",
+    "@popperjs/core": "^2.9.3",
     "acorn": "*",
     "axios": "*",
     "bootstrap": "*",
@@ -50,9 +51,11 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "eslint-plugin-react": "^7.23.2"
+    "eslint-plugin-react": "^7.24.0"
   },
   "resolutions": {
-    "minimist": "^1.2.5"
+    "minimist": "^1.2.5",
+    "glob-parent": "*",
+    "browserslist": "*"
   }
 }

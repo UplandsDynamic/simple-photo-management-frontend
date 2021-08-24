@@ -51,8 +51,6 @@ Login credentials are:
 
 ## Usage Instructions
 
-- Navigate to the web client url - e.g. `http://your_domain.tld` **Note: When starting a newly built or pulled container for the first time, the web client may take several minutes (depending on your server's resources) to create a fresh build. You will get a `502 Bad Gateway` error whilst the NPM build is occurring. Please be patient and try refreshing the page in a few moments.**
-
 - Login to the web client using the superuser credentials you'd previously supplied.
 - Click on the `+` button to scan the photo_directory for new original photos. By default, this action:
   - Recursively scans for digital images (.jpg, .tiff, .png)
@@ -104,11 +102,12 @@ __Below are basic steps to install and run a demonstration of the app on an Linu
 - Ensure you backup a copy of changes to your environment configuration - make a copy of your `.env.production` file *outside* of your cloned directory.
 - From the build directory, run `git pull`.
 - Remove existing node modules, e.g.: `rm -rf node_modules`.
+- Clear the cache, e.g.: `npm cache clear --force`
 - Install updated modules, e.g.: `npm install --legacy-peer-deps`.
-- In the event of any vulnerabilities being flagged up, repeat `npm install --legacy-peer-deps` to see if that resolves the issue. Do this *first, before* resorting to running `npm audit fix`.
+- In the event of any vulnerabilities being flagged up, run `npm audit fix`.
 - Rebuild the project, e.g.: `npm run build:production`.
-- Once the app has been built, copy to the web directory: `cp -a build/. /var/www/html/ssm-frontend/;` `cp -a /var/www/html/ssm-frontend/static/. /var/www/html/ssm-frontend/;`.
-- Recursively change ownership of the `ssm-frontend` directory to your web server user.
+- Once the app has been built, copy to the web directory: `cp -a build/. /var/www/html/spm-frontend/;` `cp -a /var/www/html/spm-frontend/static/. /var/www/html/spm-frontend/;`.
+- Recursively change ownership of the `spm-frontend` directory to your web server user.
 - Restart your web server.
 
 Note: The above guide is not definitive and is intended for users who know their way around Ubuntu server and Django.
