@@ -158,7 +158,7 @@ div.light div.data-table {
 }
 
 div.light div.data-table table {
-  background-color: #d4e0ff !important;
+  background-color: #d4eeff !important;
   font-weight: bold;
   color: rgb(19, 19, 19);
 }
@@ -168,9 +168,13 @@ border: none!important;
 }
 
 div.light table.table-bordered td,
-div.light table.table-bordered th {
+div.light table.table-bordered th,
+div.light table.table-bordered td,
+div.light table.table-bordered th
+ {
   border: 1px solid #001e00 !important;
-  background-color: #d4e0ff !important;
+  background-color: #d4eeff !important;
+
 }
 
 div.light thead th {
@@ -223,7 +227,7 @@ div.light caption {
 div.light input.search,
 div.light input.replace {
   border: 2px orange !important;
-  background-color: #d4e0ff;
+  background-color: #d4eeff;
   color: black !important;
 }
 

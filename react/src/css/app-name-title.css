@@ -4,7 +4,6 @@ div.container {
 }
 
 span.appTitle {
-    display: block;
     margin-top: 1pc;
     transform: rotateX(360deg) scale(1);
     transition: all 2000ms ease-in-out;

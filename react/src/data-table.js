@@ -99,7 +99,7 @@ const DataTable = props => {
       <div className={"container"}>
         <div className={"row"}>
           <div className={"col-sm table-responsive table-sm"}>
-            <table className="table table-bordered table-dark table-hover">
+            <table className="table table-bordered table-dark">
               <caption>
                 Archived Images
                 {record.meta.datetime_of_request
