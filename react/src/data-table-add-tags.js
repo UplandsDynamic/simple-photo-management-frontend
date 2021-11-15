@@ -69,6 +69,7 @@ const DataTableAddTags = props => {
             className={"form-control"}
             disabled={!recordItem.user_is_admin}
             placeholder={"new tag 1/new tag 2"}
+            onKeyPress={(e) => { e.key === 'Enter' && e.preventDefault(); }}
           />
           <div className={"searchSuggestions"}>
             <ul>
@@ -102,7 +103,7 @@ const DataTableAddTags = props => {
             type={"submit"}
             value={"submit"}
             disabled={!recordItem.user_is_admin}
-            className={"btn btn-md btn-warning"}
+            className={"btn btn-md btn-warning add_tag"}
           >
             <FontAwesomeIcon icon={"plus"} />
           </button>

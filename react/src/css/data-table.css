@@ -143,11 +143,17 @@ td.tags span button {
 }
 
 span.tagSuggestions {
+  background-color: #ffffcc;
+  color: #333333;
   display: block;
   text-align: left;
   padding: 1.2vmin;
-  margin: 0.5vmin;
+  margin: 1vmin;
   font-size: 1.5vmin;
+}
+
+button.add_tag {
+ width: 10pc!important;
 }
 
 /* LIGHT MODE */
