@@ -12,8 +12,10 @@
     "@fortawesome/free-regular-svg-icons": "*",
     "@fortawesome/free-solid-svg-icons": "*",
     "@fortawesome/react-fontawesome": "*",
-    "@popperjs/core": "*",
-    "acorn": "*",
+    "browserlist": "*",
+    "react-dev-utils": "*",
+    "postcss": "*",
+    "html-webpack-plugin": "*",
     "axios": "*",
     "bootstrap": "*",
     "env-cmd": "*",
@@ -29,8 +31,7 @@
     "react-modal": "*",
     "react-modal-image": "*",
     "react-router-dom": "*",
-    "react-scripts": "*",
-    "to": "*"
+    "react-scripts": "*"
   },
   "scripts": {
     "analyze": "source-map-explorer build/static/js/main.*",
@@ -50,19 +51,8 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "eslint-plugin-react": "^7.28.0"
+    "eslint-plugin-react": "^7.32.2"
   },
   "resolutions": {
-    "set-value": "^4.0.1",
-    "ansi-html": "*",
-    "ansi-regex": "*",
-    "nth-check": "*",
-    "glob-parent": "*",
-    "immer": "*",
-    "browserlist": "*",
-    "optimist": "*",
-    "minimist": "*",
-    "react-dev-utils":"*",
-    "postcss": "*"
   }
 }
